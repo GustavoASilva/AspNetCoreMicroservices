@@ -1,6 +1,6 @@
 # AspNetCoreMicroservices
 
-A basic study about microservices and the related technologies. 
+A basic study about microservices and some related technologies. 
 
 💻 This project contains the following techs 💻 
 * .NET 5
