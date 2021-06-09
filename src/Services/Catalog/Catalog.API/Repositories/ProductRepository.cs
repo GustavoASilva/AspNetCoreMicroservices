@@ -74,6 +74,7 @@ namespace Catalog.API.Repositories
         {
             FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Id, id);
             var deleteResult = await _catalogContext.Products.DeleteOneAsync(filter);
+
             return deleteResult.IsAcknowledged && deleteResult.DeletedCount == 1;
         }
     }
