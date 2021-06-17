@@ -32,15 +32,6 @@ namespace Ordering.API.Controllers
             return orders;
         }
 
-        //Testing purpose
-        [HttpPost("[action]")]
-        public async Task<ActionResult<int>> Checkout([FromBody] CheckoutOrderCommand command)
-        {
-            var result = await _mediator.Send(command);
-
-            return result;
-        }
-
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
